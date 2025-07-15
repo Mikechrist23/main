@@ -7,11 +7,10 @@ app = Flask(__name__)
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id="18a3a952d929406393c7878171816bdb",
-    client_,
+    client_secret="e921387ee3374101924182052ecec00a",
     redirect_uri="http://127.0.0.1:8888/callback",
-    scope=
-    "user-read-playback-state user-modify-playback-state user-read-currently-playing",
-    cache_path="token.txt"))
+    scope="user-read-playback-state user-modify-playback-state user-read-currently-playing",
+    cache_path="token.txt"
 
 
 @app.route("/")
